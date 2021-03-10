@@ -1,0 +1,1 @@
+(new WOW).init(),emailjs.init("user_jbiUt6S3tUi928WKuSKlk"),document.getElementById("contact-form").addEventListener("submit",function(e){e.preventDefault(),emailjs.sendForm("gmail","template_c7fXxUPf",this).then(e=>{200===e.status?$(".alert-success")[0].classList.remove("d-none"):$(".alert-danger")[0].classList.remove("d-none")})});

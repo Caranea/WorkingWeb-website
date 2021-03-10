@@ -1,0 +1,214 @@
+.navbar-brand img {
+    width: 200px;
+}
+
+.nav-link {
+    font: normal normal normal 14px/1.4em 'Poppins', sans-serif;
+    color: #000
+}
+
+.nav-link:hover {
+    color: #000;
+    text-decoration:none;
+}
+
+.active {
+    color: #EE4A3E;
+}
+
+.background, footer * {
+    color: #fff;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.image {
+    position: relative;
+    min-height: 625px;
+    min-width: 468px;
+}
+
+.image img {
+    width: 468px;
+    height: 683px;
+    position: absolute;
+}
+
+.main-container h1 {
+    font-size: 58px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.main-container h3 {
+   font: normal normal normal 21px/1.4em 'Poppins', sans-serif;
+   font-weight: 600;
+}
+
+.main-container h1+span {
+    font: normal normal normal 22px/1.4em 'Poppins', sans-serif;
+    font-weight: 200;
+    display: inline-block;
+    margin-right: 30%
+}
+
+.brands {
+    margin: 180px 0;
+    margin-bottom: 120px;
+}
+
+.investor-info {
+    padding: 50px;
+}
+
+.investor-info .d-block {
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.investor-info .d-flex{
+    font-size: 22px;
+}
+
+.investor-info .d-block span {
+    font-size: 40px;
+}
+
+footer {
+    background: #212121;
+    margin-top:150px;
+}
+
+.footer-container {
+    width: calc(100% - 120px);
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+footer img {
+    height: 100px;
+    width: 100px;
+}
+
+footer .col:first-of-type {
+    padding-left: 0;
+}
+
+footer .col span {
+    max-width: 400px;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+footer h5 {
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    padding-left: 0;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.background {
+    background:  #EE4A3E;
+    padding: 50px;
+}
+
+.navbar-toggler {
+    z-index: 2;
+}
+
+.navbar-toggler i:nth-of-type(2){
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar-toggler[aria-expanded="true"] i:nth-of-type(2){
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar-toggler[aria-expanded="true"] i:nth-of-type(1){
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (min-width: 992px) {
+    .main-container {
+        margin-left: calc((100% - 980px) / 2);
+        width: 940px;
+        padding: 0 20px;
+    }  
+    .background:first-of-type {
+        padding-top: 90px;
+    }
+    .background {
+        position: relative;
+        width: calc(100% - 120px);
+        min-width: 980px;
+        padding: 0;
+        margin: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-collapse ul {
+        position: absolute;
+        background: #fff;
+        width: 100vw;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center!important;
+        align-items: center!important;
+    }
+    .navbar-collapse ul li a{
+        font-size: 22px;
+    }
+    .image {
+        display: none;
+    }
+    .main-container {
+        width: 100%;
+        margin: 0 20px;
+    }  
+    .brands {
+        margin: 80px auto;
+    }
+    .investor-info {
+        flex-direction: column;
+    }
+    .footer-container {
+        flex-direction: column
+    }
+    .footer-container .col {
+        flex-basis: auto;
+        padding-left: 0;
+        align-items: flex-start!important;
+    }
+    .footer-container .col li {
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .main-container h1 {
+        font-size: 30px;
+    }
+    .background {
+        padding: 20px;
+    }
+    .investor-info {
+        padding: 0;
+    }
+}
